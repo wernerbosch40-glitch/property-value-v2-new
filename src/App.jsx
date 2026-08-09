@@ -1,7 +1,9 @@
 import './App.css'
+import { useState } from 'react'
 import { supabase } from './supabase'
 const BASE = import.meta.env.BASE_URL;
 function App() {
+  const [submitted, setSubmitted] = useState(false);
 const handleSubmit = async (event) => {
   event.preventDefault()
 
@@ -30,8 +32,17 @@ selling_timeframe: formData.get('sellingTimeframe'),
     return
   }
 
-  alert('Thank you. Your Property Value Report request has been received.')
-  form.reset()
+ setSubmitted(true)
+form.reset()
+
+setTimeout(() => {
+  document
+    .getElementById('success-message')
+    ?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center'
+    })
+}, 100)
 } 
   const scrollToForm = () => {
     document
@@ -274,9 +285,51 @@ selling_timeframe: formData.get('sellingTimeframe'),
         <span>✓ Personal follow-up from Werner or Liesl</span>
       </div>
     </div>
+{submitted ? (
 
-    <form className="valuation-form" onSubmit={handleSubmit}>
-      <div className="form-field">
+  <div id="success-message" className="success-message">
+    <div className="success-check">✓</div>
+
+    <h2>Thank you!</h2>
+
+    <p>Your Property Value Report request has been received.</p>
+    <p>Werner or Liesl will contact you personally.</p>
+
+    <a
+      className="success-whatsapp"
+      href="https://wa.me/27823971778?text=Hi%20Werner%2C%20I%20have%20just%20requested%20a%20Property%20Value%20Report%20and%20would%20like%20to%20chat%20about%20my%20property."
+      target="_blank"
+      rel="noreferrer"
+    >
+      WhatsApp us now
+    </a>
+
+    <button
+      type="button"
+      className="success-another"
+      onClick={() => {
+        setSubmitted(false)
+
+        setTimeout(() => {
+          document
+            .getElementById('valuation-form')
+            ?.scrollIntoView({
+              behavior: 'smooth',
+              block: 'center'
+            })
+        }, 100)
+      }}
+    >
+      Request another report
+    </button>
+  </div>
+) : (
+  <form
+    id="valuation-form"
+    className="valuation-form"
+    onSubmit={handleSubmit}
+  >
+<div className="form-field"> 
         <label htmlFor="address">Property address</label>
         <input
           id="address"
@@ -338,6 +391,7 @@ selling_timeframe: formData.get('sellingTimeframe'),
         regarding your property valuation request.
       </p>
     </form>
+    )}
   </div>
 </section>
 <section className="process-section">
