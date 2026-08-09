@@ -1,6 +1,6 @@
 import './App.css'
 import { supabase } from './supabase'
-
+const BASE = import.meta.env.BASE_URL;
 function App() {
 const handleSubmit = async (event) => {
   event.preventDefault()
@@ -44,7 +44,7 @@ selling_timeframe: formData.get('sellingTimeframe'),
   <div className="floating-header-inner">
     <div className="floating-brand">
       <div className="floating-logo">
-  <img src="/remax-logo.png" alt="RE/MAX logo" />
+ <img src={`${BASE}remax-logo.png`} alt="RE/MAX logo" />
 </div>
       
       <div className="floating-brand-text">
@@ -109,17 +109,11 @@ selling_timeframe: formData.get('sellingTimeframe'),
 
     <div className="hero-advisors">
       <div className="hero-person hero-person-werner">
-        <img
-          src="/werner-cutout.png"
-          alt="Werner Bosch"
-        />
+       <img src={`${BASE}werner-cutout.png`} alt="Werner Bosch" />
       </div>
 
       <div className="hero-person hero-person-liesl">
-        <img
-          src="/liesl-cutout.png"
-          alt="Liesl Badenhorst"
-        />
+       <img src={`${BASE}liesl-cutout.png`} alt="Liesl Badenhorst" />
       </div>
 
       <div className="hero-advisor-caption">
