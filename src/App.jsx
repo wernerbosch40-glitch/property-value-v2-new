@@ -196,7 +196,7 @@ selling_timeframe: formData.get('sellingTimeframe'),
 
     <div className="report-preview">
       <img
-        src="/report-cover.png"
+       src={`${BASE}report-cover.png`}
         alt="Strategic Property and Market Report"
         className="real-report-cover"
       />
@@ -229,7 +229,7 @@ selling_timeframe: formData.get('sellingTimeframe'),
   <div className="advisor-grid">
     <article className="advisor-card">
       <img
-        src="/werner.jpg"
+       src={`${BASE}werner.jpg`}
         alt="Werner Bosch"
       />
 
@@ -241,7 +241,7 @@ selling_timeframe: formData.get('sellingTimeframe'),
 
     <article className="advisor-card">
       <img
-        src="/liesl.jpg"
+      src={`${BASE}liesl.jpg`}
         alt="Liesl Badenhorst"
       />
 
