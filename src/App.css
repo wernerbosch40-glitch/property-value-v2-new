@@ -1976,4 +1976,12 @@ height:510px;
 
 .hero-person-liesl img {
   height: 505px;
+}.process-icon {
+  font-size: 34px;
+  line-height: 1;
+  margin: 14px 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
 }

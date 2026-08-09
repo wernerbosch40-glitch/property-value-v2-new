@@ -355,7 +355,8 @@ selling_timeframe: formData.get('sellingTimeframe'),
   <div className="process-grid">
    <article className="process-card">
   <span className="process-number">01</span>
-  <h3>Request your report</h3>
+<div className="process-icon">📋</div>
+<h3>Request your report</h3>
   <p>
     Complete the short form with your property details and preferred
     contact method.
@@ -364,7 +365,8 @@ selling_timeframe: formData.get('sellingTimeframe'),
 
 <article className="process-card">
   <span className="process-number">02</span>
-  <h3>We contact you personally</h3>
+<div className="process-icon">📞</div>
+<h3>We contact you personally</h3>
   <p>
     Werner or Liesl contacts you to confirm the property details and
     understand your plans.
@@ -373,7 +375,8 @@ selling_timeframe: formData.get('sellingTimeframe'),
 
 <article className="process-card">
   <span className="process-number">03</span>
-  <h3>We research your property</h3>
+<div className="process-icon">🔎</div>
+<h3>We research your property</h3>
   <p>
     We review recent comparable sales, current market activity and your
     property’s position in the area.
@@ -382,7 +385,8 @@ selling_timeframe: formData.get('sellingTimeframe'),
 
 <article className="process-card">
   <span className="process-number">04</span>
-  <h3>Your report is prepared</h3>
+<div className="process-icon">📄</div>
+<h3>Your report is prepared</h3>
   <p>
     We prepare your personalised Property Value Report using current
     local market evidence and professional insight.
