@@ -215,7 +215,7 @@ setTimeout(() => {
   </div>
 </section>
 
-<section className="team-section">
+<section id="team" className="team-section">
  <div className="team-layout">
     <div className="team-copy">
       <p className="section-eyebrow">Your local property advisors</p>
@@ -257,8 +257,8 @@ setTimeout(() => {
       />
 
       <div className="advisor-card-content">
-        <strong>Liesl Badenhorst</strong>
-        <span>Professional Property Practitioner</span>
+          <strong>Liesl Badenhorst</strong>
+<span>Professional Property Practitioner & Attorney</span>
       </div>
     </article>
 
