@@ -1862,7 +1862,7 @@ height:510px;
 
 .real-report-cover {
   display: block;
-  width: min(100%, 520px);
+  width: min(100%, 650px);
   height: auto;
   border-radius: 14px;
   box-shadow: 0 35px 75px rgba(7, 31, 73, 0.28);
