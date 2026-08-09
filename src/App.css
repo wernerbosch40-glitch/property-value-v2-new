@@ -2061,4 +2061,25 @@ height:510px;
 .success-another:hover {
   background: #082f63;
   color: #fff;
+}.quick-request-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+  padding: 16px 18px;
+  background: #eaf8ef;
+  border: 1px solid #b9e6c7;
+  border-radius: 12px;
+  color: #16753a;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.quick-request-dot {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #35c46a;
+  box-shadow: 0 0 0 4px rgba(53, 196, 106, 0.12);
 }

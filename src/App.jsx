@@ -329,6 +329,12 @@ setTimeout(() => {
     className="valuation-form"
     onSubmit={handleSubmit}
   >
+    <div className="quick-request-box">
+  <span className="quick-request-dot"></span>
+  <strong>
+    Complete your FREE Property Value Report request in about 1 minute.
+  </strong>
+</div>
 <div className="form-field"> 
         <label htmlFor="address">Property address</label>
         <input
