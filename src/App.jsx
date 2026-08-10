@@ -102,6 +102,23 @@ setTimeout(() => {
       >
         GET MY FREE PROPERTY VALUE REPORT
       </button>
+      <div className="hero-contact-buttons">
+  <a
+    href="tel:+27823971778"
+    className="hero-call-button"
+  >
+    ☎ Call Now
+  </a>
+
+  <a
+    href="https://wa.me/27823971778?text=Hi%20Werner%2C%20I%20would%20like%20to%20speak%20to%20you%20about%20my%20property."
+    target="_blank"
+    rel="noreferrer"
+    className="hero-whatsapp-button"
+  >
+    WhatsApp Now
+  </a>
+</div>
 
       <div className="hero-trust">
         <span>✓ No obligation</span>
@@ -290,6 +307,23 @@ setTimeout(() => {
         <span>✓ Your information remains confidential</span>
         <span>✓ Personal follow-up from Werner or Liesl</span>
       </div>
+      <div className="hero-contact-buttons">
+  <a
+    href="tel:+27823971778"
+    className="hero-call-button"
+  >
+    ☎ Call Now
+  </a>
+
+  <a
+    href="https://wa.me/27823971778?text=Hi%20Werner%2C%20I%20would%20like%20to%20speak%20to%20you%20about%20my%20property."
+    target="_blank"
+    rel="noreferrer"
+    className="hero-whatsapp-button"
+  >
+    WhatsApp Now
+  </a>
+</div>
     </div>
 {submitted ? (
 
