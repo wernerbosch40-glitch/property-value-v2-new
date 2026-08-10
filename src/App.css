@@ -2132,4 +2132,42 @@ height:510px;
 .hero-whatsapp-button:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}/* ===== MOBILE FLOATING HEADER FIX ===== */
+@media (max-width: 600px) {
+
+  .floating-header {
+    width: calc(100% - 24px);
+    left: 12px;
+    right: 12px;
+  }
+
+  .floating-header-inner {
+    padding: 12px 14px;
+    gap: 10px;
+  }
+
+  .floating-logo {
+    width: 115px;
+    height: auto;
+  }
+
+  .floating-brand-text {
+    display: none;
+  }
+
+  .floating-nav a {
+    display: none;
+  }
+
+  .floating-nav {
+    margin-left: auto;
+  }
+
+  .floating-cta {
+    display: inline-flex;
+    padding: 12px 14px;
+    font-size: 13px;
+    line-height: 1.1;
+    white-space: nowrap;
+  }
 }
