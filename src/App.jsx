@@ -130,7 +130,7 @@ setTimeout(() => {
         <div className="hero-stars">★★★★★</div>
 
         <div>
-          <strong>300+ Professional Property Valuations</strong>
+          <strong>1000+ Professional Property Valuations</strong>
           <span>Completed for Bloemfontein homeowners</span>
         </div>
       </div>
