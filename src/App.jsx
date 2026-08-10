@@ -285,7 +285,7 @@ setTimeout(() => {
 </div>
 </section>
 
-<section id="valuation-form" className="form-section">
+<section className="form-section">
   <div className="form-layout">
     <div className="form-copy">
     <img
