@@ -2203,8 +2203,8 @@ height:510px;
   }
 
   .real-report-cover {
-    width: 90% !important;
-    max-width: 360px !important;
+      width: 96% !important;
+  max-width: 390px !important;
     height: auto !important;
     display: block !important;
     margin: 0 auto !important;
