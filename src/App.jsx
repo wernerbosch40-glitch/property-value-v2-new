@@ -59,6 +59,7 @@ setTimeout(() => {
 </div>
       
       <div className="floating-brand-text">
+        <span className="remax-slogan">Nobody in the world sells more real estate than RE/MAX.</span>
         <strong>RE/MAX First Bloemfontein</strong>
         <span>Werner Bosch & Liesl Badenhorst</span>
       </div>
