@@ -51,7 +51,7 @@ setTimeout(() => {
   }
 
   return (
-    <main><header className="floating-header">
+<main id="top"><header className="floating-header">
   <div className="floating-header-inner">
     <div className="floating-brand">
       <div className="floating-logo">
@@ -65,6 +65,7 @@ setTimeout(() => {
     </div>
 
     <nav className="floating-nav">
+      <a href="#top">Home</a>
       <a href="#team">About</a>
       <a href="#valuation-form">Contact</a>
 
@@ -270,6 +271,11 @@ setTimeout(() => {
 <section id="valuation-form" className="form-section">
   <div className="form-layout">
     <div className="form-copy">
+    <img
+  src={`${BASE}remax-logo.png`}
+  alt="RE/MAX"
+  className="form-remax-logo"
+/>
       <p className="section-eyebrow">Request your report</p>
 
       <h2>Start with a professional property opinion</h2>
