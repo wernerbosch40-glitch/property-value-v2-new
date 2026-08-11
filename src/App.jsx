@@ -31,7 +31,17 @@ selling_timeframe: formData.get('sellingTimeframe'),
     alert('Something went wrong. Please try again.')
     return
   }
+try {
+  const { error: emailError } = await supabase.functions.invoke('send-lead-email', {
+    body: lead,
+  })
 
+  if (emailError) {
+    console.error('Email notification failed:', emailError)
+  }
+} catch (emailError) {
+  console.error('Email notification failed:', emailError)
+}
  setSubmitted(true)
 form.reset()
 
